@@ -1,4 +1,4 @@
-uq_samples: swirlcode tubbs_1k_20kmx20km_10xflat.npy uq_samples_1000_1.npy
+uq_samples: swirlcode tubbs_1k_20kmx20km_10xflat.npy uq_samples_1000_1.npy small_scale_config.pbtxt
 	python3 swirl-lm/swirl_lm/example/fire/fire_main.py \
 		--flagfile="small_scale_flags.flags" \
 		--data_dump_prefix="gs://tubbs-scale-fire-simulations/small-scale-many-fuel-fix/uq_cases/" \
@@ -25,3 +25,6 @@ swirl-lm/swirl_lm/example/fire/fire_main.py:
 
 uq_samples_1000_1.npy:
 	gsutil cp gs://tubbs-scale-fire-simulations/uq_samples_1000_1.npy .
+
+small_scale_config.pbtxt:
+	gsutil cp gs://tubbs-scale-fire-simulations/small_scale_config.pbtxt .
