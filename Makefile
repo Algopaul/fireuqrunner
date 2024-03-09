@@ -41,4 +41,4 @@ small_scale_config.pbtxt:
 	gsutil cp gs://tubbs-scale-fire-simulations/small_scale_config.pbtxt .
 
 uq_filtered_20_0.npy:
-	gsutil cp gs://tubbs-scale-fire-simulations/uq_samples_20_0.npy .
+	gsutil cp gs://tubbs-scale-fire-simulations/uq_filtered_20_0.npy .
