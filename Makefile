@@ -1,7 +1,7 @@
 uq_samples_all_vars: swirlcode tubbs_1k_20kmx20km_10xflat.npy uq_samples.npy small_scale_config_all_vars.pbtxt
 	python3 swirl-lm/swirl_lm/example/fire/fire_main.py \
 		--flagfile="small_scale_flags_all_vars.flags" \
-		--data_dump_prefix="gs://tubbs-scale-fire-simulations/small-scale-many-fuel-fix/uq_cases_all_vars/" \
+		--data_dump_prefix="gs://tubbs-scale-fire-simulations/small-scale/uq_cases_all_vars/" \
 		--read_uq_file=True \
 		--target=swirl-lm-tubbs-test-pod \
 		--terrain_filepath=tubbs_1k_20kmx20km_10xflat.npy \
