@@ -27,8 +27,8 @@ uq_filtered: swirlcode tubbs_1k_20kmx20km_10xflat.npy uq_filtered_20_0.npy small
 		--read_uq_file=True \
 		--target=swirl-lm-tubbs-test-pod \
 		--terrain_filepath=tubbs_1k_20kmx20km_10xflat.npy \
-		--uq_start_id=0 \
-		--uq_end_id=5 \
+		--uq_start_id=6 \
+		--uq_end_id=20 \
 		--uq_filename='./uq_filtered_20_0.npy'
 
 
